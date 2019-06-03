@@ -1,0 +1,14 @@
+@import 'eviroment';
+@import 'resethtml';
+html{
+    font-size: 16px;
+    font-family: $TimeNewRoman;
+}
+.wrapper{
+    max-width: $max-width;
+    margin: $center;
+}
+.wrapper-middle{
+    max-width: $middle-width;
+    margin: $center;
+}

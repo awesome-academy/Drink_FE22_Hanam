@@ -1,0 +1,15 @@
+header
+    nav#menu-head.container-fluid
+        .nav-head.row
+            ul.col-md-9.d-sm-none.d-md-flex    
+                li.active
+                    a.nav-link(href='#') Tài khoản của tôi    
+                -
+                    var liNav = ['Trạng thái đơn hàng ', 'Danh sách ưa thích', 'Giỏ hàng', 'Đăng nhập', 'Đăng ký']   
+                each navitem in liNav
+                    li
+                        a.nav-link(href='#')= navitem 
+            form.form-inline.col-md-3
+                input.form-control.mr-sm-2.text-white(type='search', placeholder='Tìm kiếm ở đây ...')
+                button.btn(type='submit')
+                    i.fa.fa-search

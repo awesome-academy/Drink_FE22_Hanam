@@ -1,0 +1,108 @@
+doctype html
+html(lang='vi')
+    head
+        title Drink_FE22_Hanam 
+        // Required meta tags
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        
+        // Bootstrap CSS
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+        link(rel='stylesheet', href='./css/style.css')
+    body
+        .wrapper
+            include ./subpage/header
+            include ./subpage/nav
+            include ./subpage/main-article
+            include ./subpage/gallery
+            include ./subpage/new-product      
+            aside.box-brand
+                .wrapper-middle
+                    .box-aside__brand.container
+                        .row
+                            .box-aside__brand-item.col-md-4.col-sm-4
+                                a.box-aside__brand-item__a(href="#")
+                                    img.img-fluid.box-aside__brand-item__a-img(src="./images/imageRudu/brand1.png", alt="")
+                            .box-aside__brand-item.col-md-4.border-left.border-right.col-sm-4
+                                a.box-aside__brand-item__a(href="#")
+                                    img.img-fluid.box-aside__brand-item__a-img(src="./images/imageRudu/brand2.png", alt="")
+                            .box-aside__brand-item.col-md-4.col-sm-4
+                                a.box-aside__brand-item__a(href="#")
+                                    img.img-fluid.box-aside__brand-item__a-img(src="./images/imageRudu/brand3.png", alt="")
+                            
+            aside.box-info-contact
+                .wrapper-middle
+                    .box-aside__info-contact.container
+                        .row
+                            .box-aside__info-item.col-md-2.col-sm-6
+                                h2.box-aside__info-item__h2 Thông tin
+                                
+                                ul.box-aside__info-item__ul
+                                    -
+                                        var liInfo = ['Về chúng tôi', 'Giao hàng', 'Cảm nghĩ', 'Lưu trữ', 'Chính sách riêng tư']
+                                    each itemInfo in liInfo
+                                        mixin asideInfo(item)   
+                                            li.box-aside__info-item__ul-li
+                                                a.box-aside__info-item__ul-li__a(href="#")= item
+                                        +asideInfo(itemInfo)                      
+                            .box-aside__info-item.col-md-2.col-sm-6
+                                h2.box-aside__info-item__h2 Mua hàng
+                                ul.box-aside__info-item__ul
+                                    -
+                                        var liLogic = ['Vận chuyển và trả hàng', 'Mua hàng an toàn', 'Vận quốc tế', 'Liên kết', 'Dịch vụ giảm giá']
+                                    each itemLogic in liLogic
+                                        +asideInfo(itemLogic)                            
+                            .box-aside__info-item.col-md-4.col-sm-6
+                                h2.box-aside__info-item__h2 Gửi email
+                                form.box-aside__info-item__form 
+                                    .form-group
+                                        label.box-aside__info-item__form-label Gửi email cho chúng tôi để được hỗ trợ
+                                        .box-aside__info-item__form-control.container
+                                            .row
+                                                input.box-aside__info-item__form-control__input.col-sm-9.form-control(type="text", placeholder="Enter your email")
+                                                .box-aside__info-item__form-control__button.col-sm-3.container-fluid.nopadding
+                                                    .row
+                                                        button.col-sm-6.nopadding.box-aside__info-item__form-control__button-btn.btn(type="submit") Gửi
+                                                        .triangle.col-sm-6.nopadding
+                                .box-aside__info-item__social
+                                    ul.box-aside__info-item__social-ul
+                                        li.box-aside__info-item__social-ul__li
+                                            a.box-aside__info-item__social-ul__li-a(href="#")
+                                                i.fa.fa-twitter
+                                        li.box-aside__info-item__social-ul__li
+                                            a.box-aside__info-item__social-ul__li-a(href="#")
+                                                i.fa.fa-google-plus
+                                        li.box-aside__info-item__social-ul__li
+                                            a.box-aside__info-item__social-ul__li-a(href="#")
+                                                i.fa.fa-dribbble
+                                        li.box-aside__info-item__social-ul__li
+                                            a.box-aside__info-item__social-ul__li-a(href="#")
+                                                i.fa.fa-linkedin
+                                        li.box-aside__info-item__social-ul__li
+                                            a.box-aside__info-item__social-ul__li-a(href="#")
+                                                i.fa.fa-stack-overflow                               
+                            
+                            .box-aside__info-item.col-md-4.col-sm-6
+                                h2.box-aside__info-item__h2 Liên hệ
+                                p.box-aside__info-item__p 
+                                    i.fa.fa-map-marker 
+                                    span  Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội
+                                
+                                p.box-aside__info-item__p  
+                                    i.fa.fa-phone-square 
+                                    span  (04) 6674 2332 
+                                    i - 
+                                    i.fa.fa-phone-square 
+                                    span  (04) 3786 8904
+                                p.box-aside__info-item__p
+                                    i.fa.fa-phone-square 
+                                    span  (04) 6674 2332 
+                                    i - 
+                                    i.fa.fa-envelope
+                                    span  Support@bizweb.vn
+                                    
+            include ./subpage/footer                       
+        // Optional JavaScript
+        // font-awesome
+        script(src="https://use.fontawesome.com/55051cfd3d.js")
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

@@ -1,0 +1,14 @@
+nav
+    #menu.navbar
+        a.navbar-brand(href='#') 
+            img(src="./images/logo.png", alt="logo")
+        .navbar-button
+            i.fa.fa-bars
+        .navbar-nav
+            a.nav-item.nav-link.active(href='#')
+                | Trang chủ
+            -
+                var list = ["Rượu Vang đỏ", "rượu trắng", "rượu champagne",
+                        "thông tin", "blog", "liên hệ"]
+            each item in list
+                a.nav-item.nav-link(href='#')= item 
