@@ -4,12 +4,70 @@ nav
             img(src="./images/logo.png", alt="logo")
         .navbar-button
             i.fa.fa-bars
-        .navbar-nav
-            a.nav-item.nav-link.active(href='#')
-                | Trang chủ
-            a.nav-item.nav-link(href='#') Rượu Vang đỏ 
-            a.nav-item.nav-link(href='#') rượu trắng
-            a.nav-item.nav-link(href='#') rượu champagne
-            a.nav-item.nav-link(href='#') thông tin
-            a.nav-item.nav-link(href='#') blog
-            a.nav-item.nav-link(href='#') liên hệ
+        ul.navbar-nav
+            li.navbar-nav-li
+                a.nav-item.nav-link(href='#')
+                    | Trang chủ
+            li.navbar-nav-li.active
+                a.nav-item.nav-link(href='#').active Rượu Vang đỏ 
+                .sub-nav.container
+                    .row
+                        .sub-nav__child.col-md-3
+                            h3.sub-nav__child-h3 Rượu ngoại
+                            ul.sub-nav__child-ul
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Chivas
+                                li.sub-nav__child-ul__li.active
+                                    a(href="#") Hàng độc - Rượu độc đáo
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Johnnie Walker
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Whisky 
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Remy Martin
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Glenmorangie 
+    
+                        .sub-nav__child.col-md-3.nopadding
+                            h3.sub-nav__child-h3 Rượu Vang
+                            ul.sub-nav__child-ul
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Chivas
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Hàng độc - Rượu độc đáo
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Johnnie Walker
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Whisky 
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Remy Martin
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Glenmorangie 
+
+                        .sub-nav__child.col-md-3.nopadding
+                            h3.sub-nav__child-h3 Rượu ngoại
+                            ul.sub-nav__child-ul
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Chivas
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Hàng độc - Rượu độc đáo
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Johnnie Walker
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Whisky 
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Remy Martin
+                                li.sub-nav__child-ul__li
+                                    a(href="#") Rượu Glenmorangie 
+                        .sub-nav__child.col-md-3
+                            img.sub-nav__child-img(src="./images/menu-img.png", alt="menu-img")
+            li.navbar-nav-li
+                a.nav-item.nav-link(href='#') rượu trắng
+            li.navbar-nav-li
+                a.nav-item.nav-link(href='#') rượu champagne
+            li.navbar-nav-li
+                a.nav-item.nav-link(href='#') thông tin
+            li.navbar-nav-li
+                a.nav-item.nav-link(href='#') blog
+            li.navbar-nav-li
+                a.nav-item.nav-link(href='#') liên hệ

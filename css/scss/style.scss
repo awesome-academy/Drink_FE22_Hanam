@@ -1,6 +1,7 @@
 @import './layout/common';
 @import './layout/header';
 @import './layout/nav';
+
 @mixin h2($font-size) {
     font-size: $font-size;
     text-transform: uppercase;
@@ -464,4 +465,5 @@ footer{
         }
     }
 }
+@import './layout/mega-menu';
 @import './layout/responsive';
