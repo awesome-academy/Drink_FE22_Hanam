@@ -1,0 +1,27 @@
+nav{
+    background: #000000;
+    width: 100%;
+    #menu{
+        max-width: $middle-width;
+        margin: $center;
+        padding: 0;
+        a.navbar-brand{
+            padding-right: 2rem;
+        }
+        .navbar-button{
+            display: none;
+        }
+        .navbar-nav{
+            flex-direction: row;
+            a{
+                color: $white-light;
+                text-transform: uppercase;
+                font-size: $font-13;
+                margin-right: 2.625rem;
+            }
+            a:hover, a.active{
+                color: $yellow;
+            }
+        }
+    }
+}
