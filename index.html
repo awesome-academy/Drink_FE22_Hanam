@@ -1,18 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
-    <title>Title</title>
+    <title>Drink_FE22_Hanam </title>
     <!-- Required meta tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-
-
-    
+    <div class="wrapper">
+      <header>
+        <nav class="container-fluid" id="menu-head">
+          <div class="nav-head row">
+            <ul class="col-md-9 d-sm-none d-md-flex">
+              <li class="active" style="list-style:none"><a class="nav-link" href="#">Tài khoản của tôi       </a></li>
+              <li><a class="nav-link" href="#">Trạng thái đơn hàng    </a></li>
+              <li><a class="nav-link" href="#">Danh sách ưa thích</a></li>
+              <li><a class="nav-link" href="#">Giỏ hàng</a></li>
+              <li><a class="nav-link" href="#">Đăng nhập   </a></li>
+              <li><a class="nav-link" href="#">Đăng ký </a></li>
+            </ul>
+            <form class="form-inline col-md-3">
+              <input class="form-control mr-sm-2 text-white" type="search" placeholder="Tìm kiếm ở đây ...">
+              <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <nav>
+        <div class="navbar" id="menu"><a class="navbar-brand" href="#"> <img src="./images/logo.png" alt="logo"></a>
+          <div class="navbar-button"><i class="fa fa-bars"></i></div>
+          <div class="navbar-nav"><a class="nav-item nav-link active" href="#">Trang chủ</a><a class="nav-item nav-link" href="#">Rượu Vang đỏ </a><a class="nav-item nav-link" href="#">rượu trắng</a><a class="nav-item nav-link" href="#">rượu champagne</a><a class="nav-item nav-link" href="#">thông tin</a><a class="nav-item nav-link" href="#">blog</a><a class="nav-item nav-link" href="#">liên hệ</a></div>
+        </div>
+      </nav>
+      <article>
+        <div class="article box-article introduce">
+          <div class="wrapper-middle">
+            <div class="box-article__content container-fluild">
+              <h2 class="box-article__content-title">Giới thiệu</h2>
+              <hr class="box-article__content-hr">
+              <p class="box-article__content-p">
+                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui 
+                faciteorum claritatem. Investigtiones demonstraverunt lectores legere me lius quod ii legunt saepius.Claritas est etiam processus dynamicus, 
+                qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putam
+              </p>
+              <button class="box-article__content-btn btn" type="button"><a href="#">Xem thêm</a></button>
+            </div>
+          </div>
+        </div>
+        <aside class="box-aside sale">
+          <div class="wrapper-middle">
+            <div class="box-aside__sale container-fluid">
+              <div class="box-aside__sale-bg"><img class="img-fluid" src="../images/imageRudu/wine-63931_12802-1240x829.jpg" alt="wine-bg">
+                <div class="box-aside__sale-content container-fluid">
+                  <div class="row">
+                    <div class="box-aside__sale-content_picture col-sm-7 nopadding">
+                      <div class="box-aside__sale-content_picture__sale"><img class="img-fluid" src="./images/sale.png" alt="sale"></div>
+                      <div class="box-aside__sale-content_picture__product"><img class="box-aside__sale-content_picture__product-img img-fluid" src="./images/product/14.jpg" alt="product"></div>
+                    </div>
+                    <div class="box-aside__sale-content__info col-sm-5 nopadding">
+                      <h2 class="box-aside__sale-content__info-h2">Rượu nho năm 1987</h2>
+                      <hr class="box-aside__sale-content__info-hr">
+                      <h3 class="box-aside__sale-content__info-h3">330.000đ</h3>
+                      <button class="box-aside__sale-content__info-button"> <a href="#">Add to cart</a></button>
+                      <p class="box-aside__sale-content__info-p">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
+                      <table class="box-aside__sale-content__info-table table table-bordered">
+                        <tbody class="box-aside__sale-content__info-table__tbody">
+                          <tr class="box-aside__sale-content__info-table__tbody-tr">
+                            <td class="box-aside__sale-content__info-table__tbody-tr__td">
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-p">334</p>
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-span">Ngày</p>
+                            </td>
+                            <td class="box-aside__sale-content__info-table__tbody-tr__td"> 
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-p">26</p>
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-span">giờ</p>
+                            </td>
+                          </tr>
+                          <tr class="box-aside__sale-content__info-table__tbody-tr">
+                            <td class="box-aside__sale-content__info-table__tbody-tr__td"> 
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-p">60</p>
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-span">phút</p>
+                            </td>
+                            <td class="box-aside__sale-content__info-table__tbody-tr__td"> 
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-p">15</p>
+                              <p class="box-aside__sale-content__info-table__tbody-tr__td-span">giây</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="article box-article new-product">
+          <div class="wrapper-middle">
+            <div class="box-article__content container-fluild">
+              <h2 class="box-article__content-title">sản phẩm mới</h2>
+              <hr class="box-article__content-hr">
+            </div>
+            <div class="box-article__content-new-products row">
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-hotdeal img-fluid" src="./images/sale-left.png" alt="sale"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/imageRudu/508c88894d0b4dccaa27670fb720938d.jpg" alt="product">
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                </div>
+              </div>
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-hotdeal img-fluid" src="./images/moi.png" alt="sale"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/imageRudu/ASB0904_001.jpeg" alt="product">
+                  <div class="box-article__content-new-products-col__content-review">
+                    <table class="content-review__table table nopadding">
+                      <tbody class="content-review__table-tbody">
+                        <tr class="content-review__table-tbody__tr">
+                          <td class="content-review__table-tbody__tr-td"><a class="content-review__table-tbody__tr-td__a" href="#"> <i class="content-review__table-tbody__tr-td__a-i fa fa-heart"></i><span class="content-review__table-tbody__tr-td__a-span">Yêu thích</span></a></td>
+                          <td class="content-review__table-tbody__tr-td"> <a class="content-review__table-tbody__tr-td__a" href="#"><i class="content-review__table-tbody__tr-td__a-i fa fa-signal"></i><span class="content-review__table-tbody__tr-td__a-span">So sánh</span></a></td>
+                          <td class="content-review__table-tbody__tr-td"> <a class="content-review__table-tbody__tr-td__a" href="#"><i class="content-review__table-tbody__tr-td__a-i fa fa-compress"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                </div>
+              </div>
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-hotdeal img-fluid" src="./images/hot.png" alt="sale"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/imageRudu/a26abccb2f65c963a597c2ad76f95051.jpg" alt="product">
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart  </a></button>
+                </div>
+              </div>
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/imageRudu/1e904be72e9063d0305655ae2d071025.jpg" alt="product">
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside class="box-aside">
+        <div class="box-aside__gallary container-fluid">
+          <div class="row">
+            <div class="box-aside__gallary-item box-aside__gallary-item__item1 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+            <div class="box-aside__gallary-item box-aside__gallary-item__item2 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+            <div class="box-aside__gallary-item box-aside__gallary-item__item3 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+            <div class="box-aside__gallary-item box-aside__gallary-item__item4 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+            <div class="box-aside__gallary-item box-aside__gallary-item__item5 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+            <div class="box-aside__gallary-item box-aside__gallary-item__item6 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+            <div class="box-aside__gallary-item box-aside__gallary-item__item7 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+            <div class="box-aside__gallary-item box-aside__gallary-item__item8 col-md-3 nopadding col-sm-6"><a class="box-aside__gallary-item__a" href="#"></a></div>
+          </div>
+        </div>
+      </aside>
+      <article>
+        <div class="article box-article new-product">
+          <div class="wrapper-middle">
+            <div class="box-article__content container-fluild">
+              <h2 class="box-article__content-title">sản phẩm bán chạy</h2>
+              <hr class="box-article__content-hr">
+            </div>
+            <div class="box-article__content-new-products row">
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/product/7.jpg" alt="product">
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                </div>
+              </div>
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/product/8.jpg" alt="product">
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                </div>
+              </div>
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/product/1.jpg" alt="product">
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                </div>
+              </div>
+              <div class="box-article__content-new-products-col col-md-3 col-sm-6">
+                <div class="box-article__content-new-products-col__content"><img class="box-article__content-new-products-col__content-products img-fluid" src="./images/product/2.jpg" alt="product">
+                  <h4 class="box-article__content-new-products-col__content-h4"> <a href="#">rượu vang đà lạt</a></h4>
+                  <p class="box-article__content-new-products-col__content-p"><span class="box-article__content-new-products-col__content-p__price">370.000<sup>đ</sup></span><span class="box-article__content-new-products-col__content-p__saleprice"> - 
+                      <del>450.000<sup>đ</sup></del></span></p>
+                  <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article box-article new-customers container-fluid">
+          <div class="wrapper-middle row">
+            <div class="box-article__content col-sm-8 nopadding">
+              <h2 class="box-article__content-title">Tin tức & blog</h2>
+              <hr class="box-article__content-hr">
+              <div class="new-box container-fluid">
+                <div class="row">
+                  <div class="new-box__item col-sm-6"><img class="img-fluid" src="./images/imageRudu/new1.jpg" alt="new1">
+                    <h3 class="new-box__item-h3"><a class="new-box__item-h3__a" href="#">Vang Thăng Long Classic</a></h3>
+                    <p class="new-box__item-note">Đăng bởi Giangle | 30/06/2015 | 60 bình luận</p>
+                    <p class="new-box__item-p">
+                      Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, 
+                      sản phẩm được đóng chai dung tích 750ml...
+                    </p><a class="new-box__item-a" href="#">Read more</a>
+                  </div>
+                  <div class="new-box__item col-sm-6"><img class="img-fluid" src="./images/imageRudu/new2.jpg" alt="new1">
+                    <h3 class="new-box__item-h3"><a class="new-box__item-h3__a" href="#">Vang Thăng Long Classic</a></h3>
+                    <p class="new-box__item-note">Đăng bởi Giangle | 30/06/2015 | 60 bình luận</p>
+                    <p class="new-box__item-p">
+                      Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, 
+                      sản phẩm được đóng chai dung tích 750ml...
+                    </p><a class="new-box__item-a" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-article__content col-sm-4 nopadding">
+              <h2 class="box-article__content-title">khách hàng</h2>
+              <hr class="box-article__content-hr">
+              <div class="customer-box">
+                <div class="customer-box__eclipse"><i class="customer-box__eclipse-i fa fa-quote-right"></i></div>
+                <p class="customer-box__p">
+                  Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, 
+                  sản phẩm được đóng chai dung tích 750ml...
+                </p><a class="customer-box__a" href="#">Read more</a>
+                <div class="customer-box__avatar"><img class="mx-auto d-block customer-box__avatar-img" src="./images/imageRudu/timthumb (2).jpg" alt=""></div>
+                <h3 class="customer-box__h3">Giang Lt</h3>
+                <p class="customer-box__p">Graphic Design</p>
+                <div class="customer-box__button">
+                  <ol class="customer-box__button-ol">
+                    <li class="customer-box__button-ol__li active"><i class="fa fa-circle"></i></li>
+                    <li class="customer-box__button-ol__li"><i class="fa fa-circle"></i></li>
+                    <li class="customer-box__button-ol__li"><i class="fa fa-circle"></i></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside class="box-brand">
+        <div class="wrapper-middle">
+          <div class="box-aside__brand container">
+            <div class="row">
+              <div class="box-aside__brand-item col-md-4 col-sm-4"><a class="box-aside__brand-item__a" href="#"><img class="img-fluid box-aside__brand-item__a-img" src="./images/imageRudu/brand1.png" alt=""></a></div>
+              <div class="box-aside__brand-item col-md-4 border-left border-right col-sm-4"><a class="box-aside__brand-item__a" href="#"><img class="img-fluid box-aside__brand-item__a-img" src="./images/imageRudu/brand2.png" alt=""></a></div>
+              <div class="box-aside__brand-item col-md-4 col-sm-4"><a class="box-aside__brand-item__a" href="#"><img class="img-fluid box-aside__brand-item__a-img" src="./images/imageRudu/brand3.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="box-info-contact">
+        <div class="wrapper-middle">
+          <div class="box-aside__info-contact container">
+            <div class="row">
+              <div class="box-aside__info-item col-md-2 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Thông tin</h2>
+                <ul class="box-aside__info-item__ul">
+                  <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Về chúng tôi </a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Giao hàng</a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Cảm nghĩ</a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Lưu trữ </a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Chính sách riêng tư</a></li>
+                </ul>
+              </div>
+              <div class="box-aside__info-item col-md-2 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Mua hàng</h2>
+                <ul class="box-aside__info-item__ul">
+                  <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Vận chuyển và trả hàng</a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Mua hàng an toàn</a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Vận quốc tế</a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Liên kết</a></li>
+                  <li><a class="box-aside__info-item__ul-li__a" href="#">Dịch vụ giảm giá</a></li>
+                </ul>
+              </div>
+              <div class="box-aside__info-item col-md-4 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Gửi email</h2>
+                <form class="box-aside__info-item__form"> 
+                  <div class="form-group">
+                    <label class="box-aside__info-item__form-label">Gửi email cho chúng tôi để được hỗ trợ</label>
+                    <div class="box-aside__info-item__form-control container">
+                      <div class="row">
+                        <input class="box-aside__info-item__form-control__input col-sm-9 form-control" type="text" placeholder="Enter your email">
+                        <div class="box-aside__info-item__form-control__button col-sm-3 container-fluid nopadding">
+                          <div class="row">
+                            <button class="col-sm-6 nopadding box-aside__info-item__form-control__button-btn btn" type="submit">Gửi</button>
+                            <div class="triangle col-sm-6 nopadding"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="box-aside__info-item__social">
+                  <ul class="box-aside__info-item__social-ul">
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-stack-overflow">                              </i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box-aside__info-item col-md-4 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Liên hệ</h2>
+                <p class="box-aside__info-item__p"> <i class="fa fa-map-marker"> </i><span> Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội</span></p>
+                <p class="box-aside__info-item__p"> <i class="fa fa-phone-square"> </i><span> (04) 6674 2332 </span><i>- </i><i class="fa fa-phone-square"> </i><span> (04) 3786 8904</span></p>
+                <p class="box-aside__info-item__p"><i class="fa fa-phone-square"> </i><span> (04) 6674 2332 </span><i>- </i><i class="fa fa-envelope"></i><span> Support@bizweb.vn</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <footer>
+        <hr>
+        <div class="wrapper-middle">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="box-footer col-sm-9 nopadding">
+                <p>© Copyright 2008-2014 DKT Technology JSC</p>
+              </div>
+              <div class="box-footer-social col-sm-3 nopadding">
+                <ul class="box-footer-social__ul"> 
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-visa"></i></a></li>
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-paypal"></i></a></li>
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-jcb"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
     <!-- Optional JavaScript-->
+    <!-- font-awesome-->
+    <script src="https://use.fontawesome.com/55051cfd3d.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

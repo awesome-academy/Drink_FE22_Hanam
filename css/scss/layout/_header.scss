@@ -1,0 +1,8 @@
+header{
+    height: $head-height;
+    background: url(../images/slider/Slider1.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    @import 'menu-head';
+}
