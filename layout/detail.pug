@@ -8,26 +8,24 @@ html(lang='vi')
         
         // Bootstrap CSS
         link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
-        link(rel='stylesheet', href='./css/style.css')
+        link(rel='stylesheet', href='../css/detail.css')
     body
         .wrapper
-            include ./subpage/header
+            include ./subpage/normal-header
             include ./subpage/nav
 
-            include ./subpage/main-article
+            article
+                include ./subpage/module-product
 
-            include ./subpage/gallery
             article
                 include ./subpage/product
-                +article('Sản phẩm bán chạy')
-
-                include ./subpage/customer
-            
-
+                +article('Sản phẩm liên quan')
+                    
             include ./subpage/brand
             include ./subpage/info-contact
                                     
             include ./subpage/footer               
+            
 
             
 

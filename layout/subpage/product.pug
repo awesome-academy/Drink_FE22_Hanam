@@ -1,8 +1,8 @@
-article
+mixin article(title='Default Title')   
     .article.box-article.new-product
         .wrapper-middle
             .box-article__content.container-fluild
-                h2.box-article__content-title sản phẩm bán chạy
+                h2.box-article__content-title= title
                 hr.box-article__content-hr
             .box-article__content-new-products.row
                 .box-article__content-new-products-col.col-md-3.col-sm-6
@@ -61,5 +61,3 @@ article
                                     sup đ
                         button.box-article__content-new-products-col__content-button 
                             a(href="#") Add to cart
-                
-    include customer

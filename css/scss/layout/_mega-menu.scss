@@ -16,7 +16,11 @@ nav{
             .navbar-nav-li.active .nav-link{
                 border-bottom-color: $yellow;
             }
+            .navbar-nav-li:hover > .sub-nav{
+                display: block;
+            }
             .sub-nav{
+                display: none;
                 position: absolute;
                 border: 1px solid $yellow;
                 background: $white-light;

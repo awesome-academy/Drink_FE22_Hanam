@@ -85,57 +85,49 @@ html {
   margin: 0 auto;
 }
 
-header {
-  height: 41.5rem;
-  background: url(../images/slider/Slider1.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-header nav#menu-head {
+.nomal-header nav#menu-head {
   font-family: "Times New Roman", Times, serif;
   background: rgba(255, 255, 255, 0.116);
   width: 100%;
 }
-header nav#menu-head .nav-head {
+.nomal-header nav#menu-head .nav-head {
   max-width: 71.375rem;
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
 }
-header nav#menu-head .nav-head ul {
+.nomal-header nav#menu-head .nav-head ul {
   display: flex;
   margin-top: 0.75rem;
 }
-header nav#menu-head .nav-head ul li {
-  list-style-image: url("../images/liststyle.png");
+.nomal-header nav#menu-head .nav-head ul li {
   margin-right: 25px;
 }
-header nav#menu-head .nav-head ul li a {
-  color: #d6d6d6;
+.nomal-header nav#menu-head .nav-head ul li a {
+  color: #818181;
   font-size: 0.75rem;
   padding: 0;
 }
-header nav#menu-head .nav-head ul li:hover a, header nav#menu-head .nav-head ul li.active a {
+.nomal-header nav#menu-head .nav-head ul li:hover a, .nomal-header nav#menu-head .nav-head ul li.active a {
   color: #e6ae48;
 }
-header nav#menu-head .nav-head form input {
+.nomal-header nav#menu-head .nav-head form input {
   font-size: 0.75rem;
   background: none;
   border: none;
   border-left: 2px solid white;
   border-radius: unset;
 }
-header nav#menu-head .nav-head form ::placeholder {
-  color: white;
+.nomal-header nav#menu-head .nav-head form ::placeholder {
+  color: #818181;
 }
-header nav#menu-head .nav-head form input:hover, header nav#menu-head .nav-head form input:focus, header nav#menu-head .nav-head form input:visited {
+.nomal-header nav#menu-head .nav-head form input:hover, .nomal-header nav#menu-head .nav-head form input:focus, .nomal-header nav#menu-head .nav-head form input:visited {
   box-shadow: none;
 }
-header nav#menu-head .nav-head form button i {
-  color: #ffffff;
+.nomal-header nav#menu-head .nav-head form button i {
+  color: #818181;
 }
-header nav#menu-head .nav-head form button:focus {
+.nomal-header nav#menu-head .nav-head form button:focus {
   box-shadow: none;
 }
 
@@ -167,6 +159,9 @@ nav #menu .navbar-nav a:hover, nav #menu .navbar-nav a.active {
   color: #e6ae48;
 }
 
+article {
+  margin-bottom: 150px;
+}
 article .article::before {
   content: '';
   clear: both;
@@ -364,138 +359,6 @@ article aside.box-aside.sale .box-aside__sale-bg .box-aside__sale-content__info-
 }
 article aside.box-aside {
   margin-top: 6rem;
-}
-
-article .new-customers {
-  margin-top: 6.25rem;
-  margin-bottom: 6.25rem;
-}
-article .new-customers .new-box {
-  margin-top: 2.625rem;
-}
-article .new-customers .new-box__item {
-  text-align: left;
-}
-article .new-customers .new-box__item-h3 {
-  margin-top: 1.75rem;
-  margin-bottom: 0.75rem;
-}
-article .new-customers .new-box__item-h3__a {
-  font-family: "Times New Roman", Times, serif;
-  color: #303030;
-  font-size: 1.125rem;
-  text-transform: uppercase;
-}
-article .new-customers .new-box__item-note {
-  font-family: "Times New Roman", Times, serif;
-  color: #c1c1c1;
-  font-size: 0.75rem;
-}
-article .new-customers .new-box__item-p {
-  margin-top: 1rem;
-  line-height: 1.5;
-  font-family: "Times New Roman", Times, serif;
-  color: #818181;
-  font-size: 0.82rem;
-}
-article .new-customers .new-box__item-a {
-  margin-top: 0.75rem;
-  font-family: "Times New Roman", Times, serif;
-  color: #a7a7a7;
-  font-size: 0.82rem;
-}
-article .new-customers .customer-box__eclipse {
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background-color: #e6ae48;
-  margin: 1.75rem auto;
-}
-article .new-customers .customer-box__eclipse-i {
-  text-align: center;
-  font-size: 1.75rem;
-  color: #ffffff;
-  padding: 1.125rem;
-}
-article .new-customers .customer-box__p {
-  margin-top: 1.75rem;
-  color: #818181;
-  font-size: 0.82rem;
-  line-height: 1.5;
-}
-article .new-customers .customer-box__a {
-  margin-top: 0.75rem;
-  font-family: "Times New Roman", Times, serif;
-  color: #a7a7a7;
-  font-size: 0.82rem;
-}
-article .new-customers .customer-box__avatar {
-  margin-top: 1.875rem;
-}
-article .new-customers .customer-box__avatar-img {
-  max-width: 40%;
-  border-radius: 0.625rem;
-}
-article .new-customers .customer-box__h3 {
-  margin-top: 1.3125rem;
-  color: #212121;
-  font-size: 0.82rem;
-  text-transform: uppercase;
-}
-article .new-customers .customer-box__p {
-  margin: 0;
-}
-article .new-customers .customer-box__button-ol {
-  display: flex;
-  justify-content: center;
-}
-article .new-customers .customer-box__button-ol__li {
-  padding: 0.25rem;
-  color: #b4b4b4;
-}
-article .new-customers .customer-box__button-ol__li i {
-  font-size: 0.75rem;
-}
-article .new-customers .customer-box__button-ol__li:hover, article .new-customers .customer-box__button-ol__li.active {
-  color: #e6ae48;
-}
-
-aside .box-aside__gallary {
-  margin-top: 6.25rem;
-}
-aside .box-aside__gallary-item {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 260px;
-}
-aside .box-aside__gallary-item:hover {
-  border: 4px solid #e6ae48;
-}
-aside .box-aside__gallary-item__item1 {
-  background: url(../images/imageRudu/gallery0.jpg) no-repeat center center;
-}
-aside .box-aside__gallary-item__item2 {
-  background: url(../images/imageRudu/gallery1.jpg) no-repeat center center;
-}
-aside .box-aside__gallary-item__item3 {
-  background: url(../images/imageRudu/gallery2.jpg) no-repeat center center;
-}
-aside .box-aside__gallary-item__item4 {
-  background: url(../images/imageRudu/gallery3.jpg) no-repeat center center;
-}
-aside .box-aside__gallary-item__item5 {
-  background: url(../images/imageRudu/gallery5.jpg) no-repeat center center;
-}
-aside .box-aside__gallary-item__item6 {
-  background: url(../images/imageRudu/gallery6.jpg) no-repeat center center;
-}
-aside .box-aside__gallary-item__item7 {
-  background: url(../images/imageRudu/gallery7.jpg) no-repeat center center;
-}
-aside .box-aside__gallary-item__item8 {
-  background: url(../images/imageRudu/gallery8.jpg) no-repeat center center;
 }
 
 .box-brand .box-aside__brand {
