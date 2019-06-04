@@ -600,6 +600,7 @@ footer .box-footer-social__ul-li__a i {
   font-size: 2.125rem;
 }
 
+<<<<<<< HEAD
 nav {
   box-sizing: border-box;
 }
@@ -656,6 +657,8 @@ nav #menu .navbar-nav .sub-nav__child-img {
   margin-top: 2.125rem;
 }
 
+=======
+>>>>>>> d87c5821c28636e2e8b7fcba5832dc73572943dd
 @media (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 8px;

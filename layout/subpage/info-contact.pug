@@ -2,34 +2,29 @@ aside.box-info-contact
     .wrapper-middle
         .box-aside__info-contact.container
             .row
+
                 .box-aside__info-item.col-md-2.col-sm-6
                     h2.box-aside__info-item__h2 Thông tin
+                    
                     ul.box-aside__info-item__ul
-                        li.box-aside__info-item__ul-li
-                            a.box-aside__info-item__ul-li__a(href="#") Về chúng tôi 
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Giao hàng
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Cảm nghĩ
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Lưu trữ 
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Chính sách riêng tư
+                        -
+                            var liInfo = ['Về chúng tôi', 'Giao hàng', 'Cảm nghĩ', 'Lưu trữ', 'Chính sách riêng tư']
+                        each itemInfo in liInfo
+                            mixin asideInfo(item)   
+                                li.box-aside__info-item__ul-li
+                                    a.box-aside__info-item__ul-li__a(href="#")= item
+                            +asideInfo(itemInfo)         
+                        
 
                         
                 .box-aside__info-item.col-md-2.col-sm-6
                     h2.box-aside__info-item__h2 Mua hàng
                     ul.box-aside__info-item__ul
-                        li.box-aside__info-item__ul-li
-                            a.box-aside__info-item__ul-li__a(href="#") Vận chuyển và trả hàng
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Mua hàng an toàn
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Vận quốc tế
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Liên kết
-                        li
-                            a.box-aside__info-item__ul-li__a(href="#") Dịch vụ giảm giá
+                        -
+                            var liLogic = ['Vận chuyển và trả hàng', 'Mua hàng an toàn', 'Vận quốc tế', 'Liên kết', 'Dịch vụ giảm giá']
+                        each itemLogic in liLogic
+                            +asideInfo(itemLogic)         
+                        
                 
                 .box-aside__info-item.col-md-4.col-sm-6
                     h2.box-aside__info-item__h2 Gửi email

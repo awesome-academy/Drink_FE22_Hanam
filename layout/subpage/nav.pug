@@ -6,18 +6,15 @@ nav
             i.fa.fa-bars
         ul.navbar-nav
             li.navbar-nav-li
-                a.nav-item.nav-link(href='#')
+                a.nav-item.nav-link(href='index.html')
                     | Trang chủ
             li.navbar-nav-li.active
                 a.nav-item.nav-link(href='#').active Rượu Vang đỏ 
                 include sub-nav
-            li.navbar-nav-li
-                a.nav-item.nav-link(href='#') rượu trắng
-            li.navbar-nav-li
-                a.nav-item.nav-link(href='#') rượu champagne
-            li.navbar-nav-li
-                a.nav-item.nav-link(href='#') thông tin
-            li.navbar-nav-li
-                a.nav-item.nav-link(href='#') blog
-            li.navbar-nav-li
-                a.nav-item.nav-link(href='#') liên hệ
+            -
+                var list = ["rượu trắng", "rượu champagne",
+                        "thông tin", "blog", "liên hệ"]
+            each item in list
+                li.navbar-nav-li
+                    a.nav-item.nav-link(href='#')= item
+            
