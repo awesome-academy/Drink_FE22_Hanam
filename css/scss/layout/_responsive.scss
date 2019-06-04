@@ -1,0 +1,197 @@
+// mobile
+@mixin triangle($top, $left, $bottom){
+  border-top: $top solid transparent;
+  border-left: $left solid $background-sm;
+  border-bottom: $bottom solid transparent;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  html{
+    font-size: 8px;
+  }
+  article{
+    .box-article__content-hr {
+      display: none;
+    }
+  }
+  header{
+    display: none;
+  }
+  .box-info-contact{
+    .box-aside__info-contact{
+        .box-aside__info-item{
+          margin-top: 1.5rem;
+            &__form{
+                &-control{
+                    &__button{
+                        .triangle{
+                          @include triangle(13px, 17px, 12px);
+                        }
+                    }
+                }
+            }  
+        }
+    }
+  }
+  aside{
+    .box-aside__gallary{
+      display: none;
+    }
+  }
+
+  article{
+    .box-article.new-product{
+        .box-article__content-new-products{
+            margin-top: $font-48;
+            &-col{
+                &__content{
+                    &-hotdeal{
+                        position: absolute;
+                        left: 25%;
+                    }   
+                }
+            }
+        }
+    }
+  }
+
+  nav{
+    #menu{
+      .navbar-nav{
+        display: none;
+      }
+      .navbar-button{
+        display: block;
+        i{
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 480px) and (max-width: 720px) {
+    // Viet CSS tai day
+    html{
+      font-size: 10px;
+    }
+    article{
+      .box-article__content-hr {
+        width: 20rem;
+      }
+    }
+    .box-info-contact{
+      .box-aside__info-contact{
+          .box-aside__info-item{
+            margin-top: 1.5rem;
+              &__form{
+                  &-control{
+                      &__button{
+                          .triangle{
+                            @include triangle(13px, 17px, 12px);
+                          }
+                      }
+                  }
+              }  
+          }
+      }
+    }
+
+    article{
+      .box-article.new-product{
+        display: none;
+      }
+    }
+
+    nav{
+      #menu{
+        .navbar-nav{
+          display: none;
+        }
+        .navbar-button{
+          display: block;
+          i{
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+
+    
+  }
+   
+  // tablet
+  @media (min-width: 768px) and (max-width: 980px) {
+    html{
+      font-size: 10px;
+    }
+    nav{
+      #menu{
+        a.navbar-brand{
+          padding-right: 0;
+        }
+      }
+    }
+    article{
+      .box-article__content-hr {
+        width: 19rem;
+      }
+    }
+    header{
+      #menu-head{
+        
+      }
+    }
+    nav{
+      .navbar-{
+
+      }
+    }
+    .box-info-contact{
+      .box-aside__info-contact{
+          .box-aside__info-item{
+              &__form{
+                  &-control{
+                      &__button{
+                          .triangle{
+                            @include triangle(12px, 15px, 12px);
+                          }
+                      }
+                  }
+              }  
+          }
+      }
+    }
+  }
+   
+  // desktop
+  @media (min-width: 980px) and (max-width: 1600px) {
+    html{
+      font-size: 14px;
+    }
+    article{
+      .box-article__content-hr {
+        width: 14rem;
+      }
+    }
+    nav{
+      #menu{
+        a.navbar-brand{
+          padding-right: 0;
+        }
+      }
+    }
+    .box-info-contact{
+      .box-aside__info-contact{
+          .box-aside__info-item{
+              &__form{
+                  &-control{
+                      &__button{
+                          .triangle{
+                              @include triangle(17px, 25px, 17px);
+                          }
+                      }
+                  }
+              }  
+          }
+      }
+    }
+  }
