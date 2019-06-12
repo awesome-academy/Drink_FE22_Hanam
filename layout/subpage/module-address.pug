@@ -1,0 +1,91 @@
+.wrapper-middle
+    .module.container-fluid
+        .row
+            include panigation
+            +panigation1('Trang chủ', 'Địa chỉ')
+            .container-fluid
+                .box-aside__sale-content__info
+                    h2.donhang.box-aside__sale-content__info-h2 Địa chỉ
+                    hr.box-aside__sale-content__info-hr
+                .row
+                    .col-lg-6
+                        h3.dangnhap-box_h3 Địa chỉ của bạn
+                        form.address-box
+                        - var namelabels = ['Tên', 'Họ & tên đệm', 'Công ty', 'Địa chỉ', 'Thành phố', 'Quốc tịch', 'Postal/Zip Code', 'Phone']
+                            each labelItem in namelabels
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label= labelItem
+                                    .col-sm-9
+                                        input.dangnhap-box_form-group__input(type="text").form-control
+                                        
+                            .form-group.row
+                                .col-sm-3
+                                .col-sm-9
+                                    .dangnhap-box_form-group__CheckBox.form-check
+                                        input(class="form-check-input", type="checkbox", value="", id="defaultCheck1")
+                                        label.dangnhap-box_form-group__CheckBox-label.form-check-label(for="defaultCheck1") Đặt làm mặc định
+                                    button.bg-info.dangnhap-box_form-group__btn.btn(type="submit") Chỉnh sửa địa chỉ
+                                    button.dangnhap-box_form-group__btn.btn(type="reset") Xoá
+                        
+                    .col-lg-6
+                        a(href="#") Thêm địa chỉ 
+                        form.address-box
+                        - var namelabels = ['Tên', 'Họ & tên đệm', 'Công ty', 'Địa chỉ', 'Thành phố', 'Quốc tịch', 'Postal/Zip Code', 'Phone']
+                            each labelItem in namelabels
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label= labelItem
+                                    .col-sm-9
+                                        input.dangnhap-box_form-group__input(type="text").form-control
+                                        
+                            .form-group.row
+                                .col-sm-3
+                                .col-sm-9
+                                    .dangnhap-box_form-group__CheckBox.form-check
+                                        input(class="form-check-input", type="checkbox", value="", id="defaultCheck1")
+                                        label.dangnhap-box_form-group__CheckBox-label.form-check-label(for="defaultCheck1") Đặt làm mặc định
+                                    button.bg-info.dangnhap-box_form-group__btn.btn(type="submit") Chỉnh sửa địa chỉ
+                                    button.dangnhap-box_form-group__btn.btn(type="reset") Xoá
+                mixin data
+                    .row
+                        .col-lg-6
+                            form.address-box
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Tên
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="Giang").form-control
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Họ và tên
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="Lê Anh").form-control
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Công ty
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="Cổ phần công nghệ DKT").form-control
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Địa chỉ
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội").form-control
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Thành phố
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="Hà Nội").form-control
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Quốc tịch
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="Việt Nam").form-control
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Postal/Zip Code
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="2300089").form-control
+                                .form-group.row
+                                    label.dangnhap-box_form-group__label.col-sm-3.col-form-label Phone
+                                    .col-sm-9  
+                                        input.dangnhap-box_form-group__input(readonly, value="0974554928").form-control
+                                .form-group.row
+                                    .col-sm-3
+                                    .col-sm-9
+                                        a.float-right(href="#") Chỉnh sửa địa chỉ
+                                hr
+
+                +data 
+                +data                     

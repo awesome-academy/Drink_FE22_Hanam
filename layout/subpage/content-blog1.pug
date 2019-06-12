@@ -1,0 +1,85 @@
+.product-aside.col-md-3
+    .box-aside__sale-content__info
+        h2.box-aside__sale-content__info-h2 Giới thiệu
+        hr.box-aside__sale-content__info-hr
+        
+        h3.blog-box_h3 Bài viết mới nhất
+        mixin blogBox(srcImg, title, date)
+            .blog-box_row.row
+                .col-md-5 
+                    a(href="#")
+                        img.img-fluid(src=srcImg, alt="blog1")
+                .col-md-7.nopadding
+                    h4.blog-box_h4= title
+                    p.blog-box_p 
+                        i.blog-box_p-i.fa.fa-calendar
+                        span.blog-box_p-span= date
+        +blogBox('./images/blog1.png','Cách sắp xếp nội thất trong nhà', '12/06/2015')
+        +blogBox('./images/blog2.png','Cách sắp xếp nội thất trong nhà', '12/06/2015')
+        +blogBox('./images/blog3.png','Cách sắp xếp nội thất trong nhà', '12/06/2015')
+        
+        h3.blog-box_h3 Blog tags
+        ul.tag-box.container-fluid
+            .row
+                - var listItem = ['Đồng hồ','Túi','Phụ kiện','Giày','Sandal','Áo sơ mi','Nước hoa','Trẻ em','Thời trang nữ']
+                each item in listItem 
+                    li.tag-box_li
+                        a.tag-box_li-a(href="#")= item
+        h3.blog-box_h3 latest video
+        .embed-responsive.embed-responsive-1by1
+            iframe.blog-box_video.embed-responsive-item(src="https://www.youtube.com/embed/qBHXrp1PaHw")
+
+.new-box__item.col-md-9
+    img.img-fluid(src="./images/backgroundblog.png", alt="blog")
+    h3.new-box__item-h3
+        a.blog-content__h3-a.new-box__item-h3__a(href="#") Vang Thăng Long Classic
+    p.blog-content__note.new-box__item-note Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+    p.blog-content__p.new-box__item-p Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từhoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảmgiác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml.Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...
+    .form-blog
+        h3.form-blog__h3 Đóng góp ý kiến 
+        form.form-blog__form
+            .form-group.row
+                label.form-blog__form-label.col-sm-2.col-form-label Tên
+                    span.form-blog__form-span *
+                .col-sm-10
+                    input.form-control(type="text", placeholder="")
+            .form-group.row
+                label.form-blog__form-label.col-sm-2.col-form-label Email 
+                    span.form-blog__form-span *
+                .col-sm-10
+                    input.form-control(type="email", placeholder="")
+            .form-group.row
+                label.form-blog__form-label.col-sm-2.col-form-label ý kiến
+                    span.form-blog__form-span *
+                .col-sm-10
+                    textarea.form-control(rows="10")
+                    button.form-blog__form-btn.btn(type="submit") Gửi ý kiến
+    .status-box
+        h3.status-box_h3 Bình luận (3)
+        mixin status
+            h4.status-box_h4 Bình luận bởi Giangle
+                span.status-box_span |
+                span.status-box_span Cách đây 4  giờ
+                span.float-right 
+                    a(href="#") Trả lời
+            p.status-box_p Có lẽ bởi tính chất "ăn gian" vóc dáng và vô cùng thoải mái, gợi cảm mà cả 2 dạng trang phục này được áp dụng nhiều nhất trong street style tuần qua ,chọn cho mình bộ trang phục đơn sắc với thiết kế cổ yếm, ống rộng - vừa thoải mái tối đa lại không kém phần gợi cảm, kết hợp cùng đôi giày quai chữ T tôn dáng
+        +status
+        +status
+        +status
+    ul.panigation-blog.float-right.d-flex
+        li.panigation-blog_control
+            a(href="")
+                i.fa.fa-chevron-left
+        li.panigation-blog_number
+            a(href="") 1
+        li.panigation-blog_number
+            a(href="") 2
+        li.panigation-blog_number
+            a(href="") 3
+        li.panigation-blog_control
+            a(href="") 
+                i.fa.fa-chevron-right
+
+
+                
+        

@@ -1,0 +1,72 @@
+.product-article.col-md-9
+    .product-panigation.container-fluild
+        .row
+            ul.product-panigation__ul.d-flex.col-9
+                li.product-panigation__ul-li
+                    a(href="#")
+                        i.fa.fa-th
+                li.product-panigation__ul-li.active
+                    a(href="#")
+                        i.fa.fa-th-list
+            ul.product-panigation__ul.d-flex.col-3
+                li.product-panigation__ul-li
+                    a(href="#")
+                        i.fa.fa-chevron-left
+                li.product-panigation__ul-li
+                    a(href="#") 1
+                li.product-panigation__ul-li
+                    a(href="#") 2
+                li.product-panigation__ul-li
+                    a(href="#") 3
+                li.product-panigation__ul-li
+                    a(href="#") 4
+                li.product-panigation__ul-li
+                    a(href="#") 5
+                li.product-panigation__ul-li
+                    a(href="#")
+                        i.fa.fa-chevron-right
+    .article.box-article.new-product.container-fluid
+        .row
+            mixin article-product-view(srcImg,title,price,salePrice)
+                .box-article__content-new-products-col.col-md-4.col-sm-6
+                    .box-article__content-new-products-col__content
+                                img.box-article__content-new-products-col__content-products.img-fluid(src=srcImg, alt=title)
+                                
+                                h4.box-article__content-new-products-col__content-h4 
+                                    a(href="#")= title
+                                    .box-article__content-new-products-col__content-review
+                                        table.content-review__table.table.nopadding
+                                            tbody.content-review__table-tbody
+                                                tr.content-review__table-tbody__tr
+                                                    td.content-review__table-tbody__tr-td
+                                                        a.content-review__table-tbody__tr-td__a(href="#") 
+                                                            i.content-review__table-tbody__tr-td__a-i.fa.fa-heart
+                                                            span.content-review__table-tbody__tr-td__a-span Yêu thích
+                                                    td.content-review__table-tbody__tr-td 
+                                                        a.content-review__table-tbody__tr-td__a(href="#")
+                                                            i.content-review__table-tbody__tr-td__a-i.fa.fa-signal
+                                                            span.content-review__table-tbody__tr-td__a-span So sánh
+                                                    td.content-review__table-tbody__tr-td  
+                                                        a.content-review__table-tbody__tr-td__a(href="#")
+                                                            i.content-review__table-tbody__tr-td__a-i.fa.fa-compress
+                                p.box-article__content-new-products-col__content-p
+                                    span.box-article__content-new-products-col__content-p__price= price
+                                        sup đ
+                                    span.box-article__content-new-products-col__content-p__saleprice  - 
+                                        del= salePrice
+                                            sup đ
+                                button.box-article__content-new-products-col__content-button 
+                                    a(href="#") Add to cart
+        
+            +article-product-view('./images/product/7.jpg','rượu vang đà lạt','370.000','450.000') 
+            +article-product-view('./images/product/8.jpg','rượu vang đà lạt','370.000','450.000')
+            +article-product-view('./images/product/1.jpg','rượu vang đà lạt','370.000','450.000')
+            +article-product-view('./images/product/7.jpg','rượu vang đà lạt','370.000','450.000') 
+            +article-product-view('./images/product/8.jpg','rượu vang đà lạt','370.000','450.000')
+            +article-product-view('./images/product/1.jpg','rượu vang đà lạt','370.000','450.000')
+            +article-product-view('./images/product/7.jpg','rượu vang đà lạt','370.000','450.000') 
+            +article-product-view('./images/product/8.jpg','rượu vang đà lạt','370.000','450.000')
+            +article-product-view('./images/product/1.jpg','rượu vang đà lạt','370.000','450.000')
+
+
+             

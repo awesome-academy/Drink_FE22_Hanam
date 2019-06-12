@@ -1,0 +1,52 @@
+.wrapper-middle
+    .module.container-fluid
+        .row
+            include panigation
+            +panigation1('Trang chủ', 'Đăng ký')
+            .container-fluid
+                .row
+                    .product-aside.col-md-3
+                        .box-aside__sale-content__info
+                            h2.box-aside__sale-content__info-h2 Đăng ký
+                            hr.box-aside__sale-content__info-hr
+                    .col-md-9
+                        btn.btn-dangky.float-right
+                            a(href="") Đăng nhập
+                form.dangnhap-box.form-login
+                    h3.dangky-box.dangnhap-box_h3 Thông tin cá nhân 
+                    .dangnhap-box_form-group.form-group.row
+                        label.dangnhap-box_form-group__label.col-sm-2.col-form-label Tên trước
+                            span *
+                        .col-sm-10
+                            input.dangnhap-box_form-group__input(type="text").form-control
+                    .dangnhap-box_form-group.form-group.row
+                        label.dangnhap-box_form-group__label.col-sm-2.col-form-label Tên sau
+                            span *
+                        .col-sm-10
+                            input.dangnhap-box_form-group__input(type="text").form-control
+                    .dangnhap-box_form-group.form-group.row
+                        label.dangnhap-box_form-group__label.col-sm-2.col-form-label Email
+                            span *
+                        .col-sm-10
+                            input.dangnhap-box_form-group__input(type="text").form-control
+                    .form-group.row
+                        label.col-sm-2.col-form-label Mật khẩu
+                            span *
+                        .col-sm-10
+                            input(type="password").form-control
+                            .dangnhap-box_form-group__CheckBox.form-check
+                                input(class="form-check-input", type="checkbox", value="", id="defaultCheck1")
+                                label.dangnhap-box_form-group__CheckBox-label.form-check-label(for="defaultCheck1") Đăng ký nhận bản tin
+                    h3.dangky-box.dangnhap-box_h3 Thông tin đăng nhập
+                    .form-group.row
+                        label.col-sm-2.col-form-label Mật khẩu
+                            span *
+                        .col-sm-10
+                            input(type="password").form-control
+                    .form-group.row
+                        label.col-sm-2.col-form-label Xác nhận mật khẩu
+                            span *
+                        .col-sm-10
+                            input(type="password").form-control
+                            button.dangky-box_btn.float-right.dangnhap-box_form-group__btn.btn(type="reset") Quay lại
+                            button.dangky-box_btn.float-right.dangnhap-box_form-group__btn.btn(type="submit") Đăng ký

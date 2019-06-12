@@ -1,0 +1,39 @@
+.product-aside.col-md-3
+    .box-aside__sale-content__info
+        h2.product-aside__h2 Danh mục sản phẩm
+        hr.box-aside__sale-content__info-hr
+        ul.sub-nav
+            li.sub-nav__li
+                a(href="#") Rượu vang
+                ul.sub-nav__child-ul
+                    - var subNav1 = ['Rượu Chivas (26)','Hàng độc - Rượu độc đáo (36)','Johnnie Walker (46)','Rượu Whisky (24)','Rượu Remy Martin (16)','Rượu Glenmorangie (11)','Rượu Ballantine\'s (7)','Rượu Cognac (40)','Rượu Vodka (93)','Rượu Macallan (19)','Rượu Brandy (62)','Rượu Hennessy (20)','RượuGin - Tequila - Liqueur - Rượu mùi (36)','Rượu Champagne (12)','Rượu Single malt Scotch whisky (47)','Rượu Spirits (4)']
+                    each subItem in subNav1
+                        li.sub-nav__child-ul__li
+                            a(href="#")= subItem
+                    
+            li.sub-nav__li
+                a(href="#") RƯỢU VANG
+                ul.sub-nav__child-ul
+                    - var subNav2 = ['Rượu Vang Pháp (44)','Rượu Vang Úc (34)','Rượu Vang Mỹ (16)','Rượu Vang ChiLe (48)','Rượu Vang Philip (1)','Rượu Vang Nam Phi (20)','Rượu Vang Ý (2)','Rượu Vang Argentina (3)']
+                    each subItem in subNav2
+                        li.sub-nav__child-ul__li
+                            a(href="#")= subItem
+                   
+               
+        h2.product-aside__h2 So sánh sản phẩm
+        hr.box-aside__sale-content__info-hr
+        ul.sub-nav__child-ul
+            li.sub-nav__child-ul__li
+                a(href="#") Bạn chưa có sản phẩm nào để so sánh  
+        h2.product-aside__h2 Tag sản phẩm
+        hr.box-aside__sale-content__info-hr
+        ul.tag-box.container-fluid
+            .row
+                - var listItem = ['Đồng hồ','Túi','Phụ kiện','Giày','Sandal','Áo sơ mi','Nước hoa','Trẻ em','Thời trang nữ']
+                each item in listItem 
+                    li.tag-box__li
+                        a(href="#")= item
+        .advertisement
+            a(href="#")
+                img.img-fluid(src="./images/advertise2.png", alt="")
+        

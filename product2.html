@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Drink_FE22_Hanam </title>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/detail.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="nomal-header">
+        <nav class="container-fluid" id="menu-head">
+          <div class="nav-head row">
+            <ul class="col-md-9 d-sm-none d-md-flex">
+              <li class="active" style="list-style:none"><a class="nav-link" href="#">Tài khoản của tôi       </a></li>
+              <li><a class="nav-link" href="./donhang.html">Trạng thái đơn hàng    </a></li>
+              <li><a class="nav-link" href="#">Danh sách ưa thích</a></li>
+              <li><a class="nav-link" href="./giohang.html">Giỏ hàng</a></li>
+              <li><a class="nav-link" href="./dangnhap.html">Đăng nhập   </a></li>
+              <li><a class="nav-link" href="./dangky.html">Đăng ký </a></li>
+            </ul>
+            <form class="form-inline col-md-3">
+              <input class="form-control mr-sm-2 text-white" type="search" placeholder="Tìm kiếm ở đây ...">
+              <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <nav>
+        <div class="navbar" id="menu"><a class="navbar-brand" href="#"> <img src="./images/logo.png" alt="logo"></a>
+          <div class="navbar-button"><i class="fa fa-bars"></i></div>
+          <ul class="navbar-nav">
+            <li class="navbar-nav-li"><a class="nav-item nav-link" href="index.html">Trang chủ</a></li>
+            <li class="navbar-nav-li active"><a class="nav-item nav-link active" href="#">Rượu Vang đỏ </a>
+              <div class="sub-nav container">
+                <div class="row">
+                  <div class="sub-nav__child col-md-3">
+                    <h3 class="sub-nav__child-h3">Rượu ngoại</h3>
+                    <ul class="sub-nav__child-ul">
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Chivas</a></li>
+                      <li class="sub-nav__child-ul__li active"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Johnnie Walker</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Whisky </a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Remy Martin</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Glenmorangie </a></li>
+                    </ul>
+                  </div>
+                  <div class="sub-nav__child col-md-3 nopadding">
+                    <h3 class="sub-nav__child-h3">Rượu Vang</h3>
+                    <ul class="sub-nav__child-ul">
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Chivas</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Johnnie Walker</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Whisky </a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Remy Martin</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Glenmorangie </a></li>
+                    </ul>
+                  </div>
+                  <div class="sub-nav__child col-md-3 nopadding">
+                    <h3 class="sub-nav__child-h3">Rượu ngoại</h3>
+                    <ul class="sub-nav__child-ul">
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Chivas</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Johnnie Walker</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Whisky </a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Remy Martin</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Glenmorangie </a></li>
+                    </ul>
+                  </div>
+                  <div class="sub-nav__child col-md-3"><img class="sub-nav__child-img" src="./images/menu-img.png" alt="menu-img"></div>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-nav-li"><a class="nav-item nav-link" href="#">rượu trắng</a></li>
+            <li class="navbar-nav-li"><a class="nav-item nav-link" href="#">rượu champagne</a></li>
+            <li class="navbar-nav-li"><a class="nav-item nav-link" href="#">thông tin</a></li>
+            <li class="navbar-nav-li"><a class="nav-item nav-link" href="#">blog</a></li>
+            <li class="navbar-nav-li"><a class="nav-item nav-link" href="#">liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="wrapper-middle">
+        <div class="module container-fluid">
+          <div class="row">
+            <div class="col-12"><a href="#"><img class="img-fluid" src="./images/quangcao.jpg" alt=""></a></div>
+            <div class="product-aside col-md-3">
+              <div class="box-aside__sale-content__info">
+                <h2 class="product-aside__h2">Danh mục sản phẩm</h2>
+                <hr class="box-aside__sale-content__info-hr">
+                <ul class="sub-nav">
+                  <li class="sub-nav__li"><a href="#">Rượu vang</a>
+                    <ul class="sub-nav__child-ul">
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Chivas (26)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Hàng độc - Rượu độc đáo (36)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Johnnie Walker (46)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Whisky (24)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Remy Martin (16)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Glenmorangie (11)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Ballantine's (7)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Cognac (40)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vodka (93)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Macallan (19)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Brandy (62)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Hennessy (20)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">RượuGin - Tequila - Liqueur - Rượu mùi (36)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Champagne (12)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Single malt Scotch whisky (47)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Spirits (4)</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-nav__li"><a href="#">RƯỢU VANG</a>
+                    <ul class="sub-nav__child-ul">
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang Pháp (44)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang Úc (34)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang Mỹ (16)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang ChiLe (48)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang Philip (1)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang Nam Phi (20)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang Ý (2)</a></li>
+                      <li class="sub-nav__child-ul__li"><a href="#">Rượu Vang Argentina (3)</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <h2 class="product-aside__h2">So sánh sản phẩm</h2>
+                <hr class="box-aside__sale-content__info-hr">
+                <ul class="sub-nav__child-ul">
+                  <li class="sub-nav__child-ul__li"><a href="#">Bạn chưa có sản phẩm nào để so sánh  </a></li>
+                </ul>
+                <h2 class="product-aside__h2">Tag sản phẩm</h2>
+                <hr class="box-aside__sale-content__info-hr">
+                <ul class="tag-box container-fluid">
+                  <div class="row">
+                    <li class="tag-box__li"><a href="#">Đồng hồ</a></li>
+                    <li class="tag-box__li"><a href="#">Túi</a></li>
+                    <li class="tag-box__li"><a href="#">Phụ kiện</a></li>
+                    <li class="tag-box__li"><a href="#">Giày</a></li>
+                    <li class="tag-box__li"><a href="#">Sandal</a></li>
+                    <li class="tag-box__li"><a href="#">Áo sơ mi</a></li>
+                    <li class="tag-box__li"><a href="#">Nước hoa</a></li>
+                    <li class="tag-box__li"><a href="#">Trẻ em</a></li>
+                    <li class="tag-box__li"><a href="#">Thời trang nữ</a></li>
+                  </div>
+                </ul>
+                <div class="advertisement"><a href="#"><img class="img-fluid" src="./images/advertise2.png" alt=""></a></div>
+              </div>
+            </div>
+            <div class="product-article col-md-9">
+              <div class="product-panigation container-fluild">
+                <div class="row">
+                  <ul class="product-panigation__ul d-flex col-9">
+                    <li class="product-panigation__ul-li"><a href="#"><i class="fa fa-th"></i></a></li>
+                    <li class="product-panigation__ul-li active"><a href="#"><i class="fa fa-th-list"></i></a></li>
+                  </ul>
+                  <ul class="product-panigation__ul d-flex col-3">
+                    <li class="product-panigation__ul-li"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                    <li class="product-panigation__ul-li"><a href="#">1</a></li>
+                    <li class="product-panigation__ul-li"><a href="#">2</a></li>
+                    <li class="product-panigation__ul-li"><a href="#">3</a></li>
+                    <li class="product-panigation__ul-li"><a href="#">4</a></li>
+                    <li class="product-panigation__ul-li"><a href="#">5</a></li>
+                    <li class="product-panigation__ul-li"><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+                            <div class="article box-article new-product container-fluid">
+                              <div class="article-product2 row">
+                                <div class="col-lg-4"><a href="#"><img class="img-fluid" src="./images/sanpham1.png" alt="Rượu nho năm 1987"></a></div>
+                                <div class="col-lg-8">
+                                  <h2 class="box-aside__sale-content__info-h2 article-product2__h2">Rượu nho năm 1987</h2>
+                                  <h3 class="box-aside__sale-content__info-h3">330.000<sup>đ</sup></h3>
+                                  <p class="box-aside__sale-content__info-p article-product2__p">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
+                                  <div class="button-article-product2">
+                                    <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-heart"></i><span class="btn-article-product2__a-span">Yêu thích</span></a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-signal"></i><span class="btn-article-product2__a-span">So sánh</span></a></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="article box-article new-product container-fluid">
+                              <div class="article-product2 row">
+                                <div class="col-lg-4"><a href="#"><img class="img-fluid" src="./images/sanpham2.png" alt="Rượu nho năm 1987"></a></div>
+                                <div class="col-lg-8">
+                                  <h2 class="box-aside__sale-content__info-h2 article-product2__h2">Rượu nho năm 1987</h2>
+                                  <h3 class="box-aside__sale-content__info-h3">330.000<sup>đ</sup></h3>
+                                  <p class="box-aside__sale-content__info-p article-product2__p">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
+                                  <div class="button-article-product2">
+                                    <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-heart"></i><span class="btn-article-product2__a-span">Yêu thích</span></a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-signal"></i><span class="btn-article-product2__a-span">So sánh</span></a></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="article box-article new-product container-fluid">
+                              <div class="article-product2 row">
+                                <div class="col-lg-4"><a href="#"><img class="img-fluid" src="./images/sanpham2.png" alt="Rượu nho năm 1987"></a></div>
+                                <div class="col-lg-8">
+                                  <h2 class="box-aside__sale-content__info-h2 article-product2__h2">Rượu nho năm 1987</h2>
+                                  <h3 class="box-aside__sale-content__info-h3">330.000<sup>đ</sup></h3>
+                                  <p class="box-aside__sale-content__info-p article-product2__p">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
+                                  <div class="button-article-product2">
+                                    <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-heart"></i><span class="btn-article-product2__a-span">Yêu thích</span></a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-signal"></i><span class="btn-article-product2__a-span">So sánh</span></a></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="article box-article new-product container-fluid">
+                              <div class="article-product2 row">
+                                <div class="col-lg-4"><a href="#"><img class="img-fluid" src="./images/sanpham2.png" alt="Rượu nho năm 1987"></a></div>
+                                <div class="col-lg-8">
+                                  <h2 class="box-aside__sale-content__info-h2 article-product2__h2">Rượu nho năm 1987</h2>
+                                  <h3 class="box-aside__sale-content__info-h3">330.000<sup>đ</sup></h3>
+                                  <p class="box-aside__sale-content__info-p article-product2__p">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
+                                  <div class="button-article-product2">
+                                    <button class="box-article__content-new-products-col__content-button"> <a href="#">Add to cart</a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-heart"></i><span class="btn-article-product2__a-span">Yêu thích</span></a></button>
+                                    <button class="btn-article-product2"><a class="btn-article-product2__a" href="#"> <i class="btn-article-product2__a-i fa fa-signal"></i><span class="btn-article-product2__a-span">So sánh</span></a></button>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="box-brand">
+        <div class="wrapper-middle">
+          <div class="box-aside__brand container">
+            <div class="row">
+              <div class="box-aside__brand-item col-md-4 col-sm-4"><a class="box-aside__brand-item__a" href="#"><img class="img-fluid box-aside__brand-item__a-img" src="./images/imageRudu/brand1.png" alt=""></a></div>
+              <div class="box-aside__brand-item col-md-4 border-left border-right col-sm-4"><a class="box-aside__brand-item__a" href="#"><img class="img-fluid box-aside__brand-item__a-img" src="./images/imageRudu/brand2.png" alt=""></a></div>
+              <div class="box-aside__brand-item col-md-4 col-sm-4"><a class="box-aside__brand-item__a" href="#"><img class="img-fluid box-aside__brand-item__a-img" src="./images/imageRudu/brand3.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="box-info-contact">
+        <div class="wrapper-middle">
+          <div class="box-aside__info-contact container">
+            <div class="row">
+              <div class="box-aside__info-item col-md-2 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Thông tin</h2>
+                <ul class="box-aside__info-item__ul">
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Về chúng tôi</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Giao hàng</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Cảm nghĩ</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Lưu trữ</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Chính sách riêng tư</a></li>
+                </ul>
+              </div>
+              <div class="box-aside__info-item col-md-2 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Mua hàng</h2>
+                <ul class="box-aside__info-item__ul">
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Vận chuyển và trả hàng</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Mua hàng an toàn</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Vận quốc tế</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Liên kết</a></li>
+                                    <li class="box-aside__info-item__ul-li"><a class="box-aside__info-item__ul-li__a" href="#">Dịch vụ giảm giá</a></li>
+                </ul>
+              </div>
+              <div class="box-aside__info-item col-md-4 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Gửi email</h2>
+                <form class="box-aside__info-item__form"> 
+                  <div class="form-group">
+                    <label class="box-aside__info-item__form-label">Gửi email cho chúng tôi để được hỗ trợ</label>
+                    <div class="box-aside__info-item__form-control container">
+                      <div class="row">
+                        <input class="box-aside__info-item__form-control__input col-sm-9 form-control" type="text" placeholder="Enter your email">
+                        <div class="box-aside__info-item__form-control__button col-sm-3 container-fluid nopadding">
+                          <div class="row">
+                            <button class="col-sm-6 nopadding box-aside__info-item__form-control__button-btn btn" type="submit">Gửi</button>
+                            <div class="triangle col-sm-6 nopadding"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="box-aside__info-item__social">
+                  <ul class="box-aside__info-item__social-ul">
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="box-aside__info-item__social-ul__li"><a class="box-aside__info-item__social-ul__li-a" href="#"><i class="fa fa-stack-overflow">                              </i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box-aside__info-item col-md-4 col-sm-6">
+                <h2 class="box-aside__info-item__h2">Liên hệ</h2>
+                <p class="box-aside__info-item__p"> <i class="fa fa-map-marker"> </i><span> Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội</span></p>
+                <p class="box-aside__info-item__p"> <i class="fa fa-phone-square"> </i><span> (04) 6674 2332 </span><i>- </i><i class="fa fa-phone-square"> </i><span> (04) 3786 8904</span></p>
+                <p class="box-aside__info-item__p"><i class="fa fa-phone-square"> </i><span> (04) 6674 2332 </span><i>- </i><i class="fa fa-envelope"></i><span> Support@bizweb.vn</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <footer>
+        <hr>
+        <div class="wrapper-middle">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="box-footer col-sm-9 nopadding">
+                <p>© Copyright 2008-2014 DKT Technology JSC</p>
+              </div>
+              <div class="box-footer-social col-sm-3 nopadding">
+                <ul class="box-footer-social__ul"> 
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-visa"></i></a></li>
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-paypal"></i></a></li>
+                  <li class="box-footer-social__ul-li"> <a class="box-footer-social__ul-li__a" href="#"><i class="fa fa-cc-jcb"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Optional JavaScript-->
+    <!-- font-awesome-->
+    <script src="https://use.fontawesome.com/55051cfd3d.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
