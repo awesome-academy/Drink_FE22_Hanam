@@ -1,0 +1,22 @@
+doctype html
+html(lang='vi')
+    include ./subpage/head-detail
+    +head('Lỗi')
+    body
+        img.img-fluid(src="./images/errorbackground.png", alt="error")
+        .wrapper
+            ul.error-box.d-flex.justify-content-center
+                li
+                    a(href="#")
+                        img.error-box_li-img(src="./images/logo-grey.png", alt="")
+                li.error-box_li 
+                    a.error-box_li-a(href="#") Trang chủ
+                        i.fa.fa-chevron-right
+                li.error-box_li 
+                    a.error-box_li-a(href="#") Liên hệ
+                        i.fa.fa-chevron-right
+                li.error-box_li-submit
+                    input.error-box_li-submit-input(type="text" value="")
+                    button.error-box_li-submit-icon(type="submit") 
+                        i.fa.fa-search
+        include ./subpage/js   

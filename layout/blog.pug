@@ -1,0 +1,15 @@
+doctype html
+html(lang='vi')
+    include ./subpage/head-detail
+    +head('Blog')
+    body
+        .wrapper
+            include ./subpage/normal-header
+            include ./subpage/nav
+
+            article
+                include ./subpage/module-blog               
+            include ./subpage/brand
+            include ./subpage/info-contact                         
+            include ./subpage/footer                     
+        include ./subpage/js   

@@ -1,0 +1,16 @@
+mixin panigation(cap1, cap2, cap3)
+    ul.panigation.col-md-12
+        - var currentUrl = '/ruouvangdo'
+        li.panigation-li.none-list
+            a(class={active: currentUrl === '/'} href='/')= cap1
+        li.panigation-li 
+            a(class={active: currentUrl === '#'} href='#')= cap2
+        li.panigation-li 
+            a(class={active: currentUrl === '/ruouvangdo'} href='/ruouvangdo')= cap3
+mixin panigation1(cap1, cap2)
+    ul.panigation.col-md-12
+        - var currentUrl = '/gioithieu'
+        li.panigation-li.none-list
+            a(class={active: currentUrl === '/'} href='/')= cap1
+        li.panigation-li 
+            a(class={active: currentUrl === '/gioithieu'} href='/gioithieu')= cap2

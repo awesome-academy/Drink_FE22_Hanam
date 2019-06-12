@@ -1,0 +1,71 @@
+.product-aside{
+    &__h2{
+        @include h2($font-16);
+        margin-top: $font-42;
+    }
+}
+.sub-nav__li{
+    text-transform: uppercase;
+    margin-top: $font-12;
+    a{
+        color: $mega-color;
+        text-decoration: none;
+    }
+}
+.sub-nav__child-ul{
+    &__li{
+        margin-top: $font-8;
+        a{
+            text-transform: capitalize;
+            color: $mega-color;
+            font-size: $font-14;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $yellow;
+        }
+    }
+    &__li:hover{
+        list-style-type: disc;
+        color: $yellow;
+        margin-left: $font-18;
+    }
+}
+.tag-box{
+    &__li{
+        font-size: $font-16;
+        padding: $font-10 $font-12;
+        border: 1px solid $mega-color;
+        margin: 0 $font-12 $font-12 0;
+        a{
+            color: $mega-color;
+            text-decoration: none;
+        }
+    }
+    &__li:hover{
+        background-color: $yellow;
+    }
+    &__li:hover > a{
+        color: $white-light;
+    }
+}
+.product-panigation{
+    border: 1px solid $border-show;
+    padding: $font-10;
+    margin-top: $font-42;
+    &__ul{
+        &-li{
+            margin-right: $font-14;
+            a{
+                color: $white-grey; 
+                text-decoration: none;
+            }
+            a:hover, a.active{
+                color: $orange;
+            }
+        }
+        &-li.active >a{
+            color: $orange;
+        }
+    }
+}

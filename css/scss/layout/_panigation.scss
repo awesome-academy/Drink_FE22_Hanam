@@ -1,0 +1,16 @@
+.panigation{
+    display: flex;
+    margin: $font-34 0;
+    &-li{
+        list-style-image: url(../images/list-style.png);
+        margin-right: $font-16;
+        a{
+            font-size: $font-14;
+            color: $grey;
+            text-decoration: none;
+        }
+        a.active{
+            color: $yellow;
+        }
+    }
+}

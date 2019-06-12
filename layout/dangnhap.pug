@@ -1,0 +1,15 @@
+doctype html
+html(lang='vi')
+    include ./subpage/head-detail
+    +head('Đăng nhập')
+    body
+        .wrapper
+            include ./subpage/normal-header
+            include ./subpage/nav
+
+            article
+                include ./subpage/module-dangnhap             
+            include ./subpage/brand
+            include ./subpage/info-contact                         
+            include ./subpage/footer                     
+        include ./subpage/js   

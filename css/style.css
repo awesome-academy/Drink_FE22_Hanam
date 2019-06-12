@@ -24,6 +24,10 @@
   border-right: 1px solid #e8e8e8;
 }
 
+.none-list {
+  list-style-image: none !important;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,6 +57,10 @@ ol, ul {
 
 blockquote, q {
   quotes: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 blockquote:before, blockquote:after {
@@ -252,6 +260,13 @@ article .box-article.new-product .box-article__content-new-products-col__content
   text-transform: uppercase;
   font-size: 0.75rem;
 }
+article .box-article.new-product .box-article__content-new-products-col__content-button a {
+  text-decoration: none;
+}
+article .box-article.new-product .box-article__content-new-products-col__content-button:hover {
+  background: #e6ae48;
+  text-decoration: none;
+}
 article .box-article__content {
   text-align: center;
   padding-top: 5.875rem;
@@ -338,6 +353,9 @@ article aside.box-aside.sale .box-aside__sale-bg .box-aside__sale-content__info-
   color: #d6d6d6;
   text-transform: uppercase;
   font-size: 0.75rem;
+}
+article aside.box-aside.sale .box-aside__sale-bg .box-aside__sale-content__info-button:hover {
+  background: #e6ae48;
 }
 article aside.box-aside.sale .box-aside__sale-bg .box-aside__sale-content__info-p {
   color: #818181;
@@ -600,7 +618,6 @@ footer .box-footer-social__ul-li__a i {
   font-size: 2.125rem;
 }
 
-<<<<<<< HEAD
 nav {
   box-sizing: border-box;
 }
@@ -629,6 +646,7 @@ nav #menu .navbar-nav .sub-nav {
   top: 1;
   left: 0;
   padding-bottom: 1.5rem;
+  z-index: 999;
 }
 nav #menu .navbar-nav .sub-nav__child-h3 {
   color: #050505;
@@ -657,8 +675,6 @@ nav #menu .navbar-nav .sub-nav__child-img {
   margin-top: 2.125rem;
 }
 
-=======
->>>>>>> d87c5821c28636e2e8b7fcba5832dc73572943dd
 @media (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 8px;

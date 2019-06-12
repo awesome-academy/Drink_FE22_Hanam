@@ -1,0 +1,14 @@
+doctype html
+html(lang='vi')
+    include ./subpage/head-detail
+    +head('Giỏ hàng')
+    body
+        .wrapper
+            include ./subpage/normal-header
+            include ./subpage/nav
+            article
+                include ./subpage/module-shoppingcart                
+            include ./subpage/brand
+            include ./subpage/info-contact                                   
+            include ./subpage/footer                          
+        include ./subpage/js   
