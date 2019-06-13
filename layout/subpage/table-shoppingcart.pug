@@ -1,0 +1,38 @@
+.container
+    .box-aside__sale-content__info
+        h2.box-aside__sale-content__info-h2 Giỏ hàng
+        hr.box-aside__sale-content__info-hr
+    table.table.table-bordered.shopping-table
+        thead.shopping-table__thead
+            tr.shopping-table__thead-tr
+                - var titles = ['Ảnh', 'Tên sản phẩm', 'Giá', 'Số lượng', 'Tổng số', 'Xoá'];
+                each item in titles
+                    th.shopping-table__thead-tr__th(scope="col")= item
+        tbody.shopping-table__tbody
+            mixin trShopping(srcImg, title, price, quantity, total)
+                tr.shopping-table__thead-tr
+                    td 
+                        img.img-fluid(src=srcImg, alt="list")
+                    td 
+                        h2.shopping-table__h2= title
+                    td  
+                        h3.shopping-table__h3= price
+                            sup đ
+                    td 
+                        h2.shopping-table__h2= quantity
+                    td  
+                        h3.shopping-table__h3= total
+                            sup đ
+                    td
+                        button.shopping-table__btn
+                            i.fa.fa-trash                                   
+            +trShopping('./images/list1.png', 'Rượu vang đỏ', '345.000', '1', '345.000') 
+            +trShopping('./images/list1.png', 'Humbuger thịt bò', '345.000', '1', '345.000')     
+            +trShopping('./images/list1.png', 'Humbuger thịt bò', '345.000', '1', '345.000')   
+            +trShopping('./images/list1.png', 'Humbuger thịt bò', '345.000', '1', '345.000') 
+    .float-right
+        .button-article-product2
+            - var values = ['Tiếp tục mua hàng', 'xoá', 'cập nhật'];
+                each val in values
+                    button.box-article__content-new-products-col__content-button 
+                        a(href="#")= val

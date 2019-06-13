@@ -1,0 +1,55 @@
+.product-article.col-md-9
+    .product-panigation.container-fluild
+        .row
+            ul.product-panigation__ul.d-flex.col-9
+                li.product-panigation__ul-li
+                    a(href="#")
+                        i.fa.fa-th
+                li.product-panigation__ul-li.active
+                    a(href="#")
+                        i.fa.fa-th-list
+            ul.product-panigation__ul.d-flex.col-3
+                li.product-panigation__ul-li
+                    a(href="#")
+                        i.fa.fa-chevron-left
+                li.product-panigation__ul-li
+                    a(href="#") 1
+                li.product-panigation__ul-li
+                    a(href="#") 2
+                li.product-panigation__ul-li
+                    a(href="#") 3
+                li.product-panigation__ul-li
+                    a(href="#") 4
+                li.product-panigation__ul-li
+                    a(href="#") 5
+                li.product-panigation__ul-li
+                    a(href="#")
+                        i.fa.fa-chevron-right
+    mixin article-product(srcImg, name, price, content)
+        .article.box-article.new-product.container-fluid
+            .article-product2.row
+                .col-lg-4
+                    a(href="#")
+                        img.img-fluid(src=srcImg, alt=name)
+                .col-lg-8
+                    h2.box-aside__sale-content__info-h2.article-product2__h2= name
+                    h3.box-aside__sale-content__info-h3= price
+                        sup đ
+                    p.box-aside__sale-content__info-p.article-product2__p= content
+                    .button-article-product2
+                        button.box-article__content-new-products-col__content-button 
+                            a(href="#") Add to cart
+                        button.btn-article-product2
+                            a.btn-article-product2__a(href="#") 
+                                i.btn-article-product2__a-i.fa.fa-heart
+                                span.btn-article-product2__a-span Yêu thích
+                        button.btn-article-product2
+                            a.btn-article-product2__a(href="#") 
+                                i.btn-article-product2__a-i.fa.fa-signal
+                                span.btn-article-product2__a-span So sánh
+                        
+            hr
+    +article-product("./images/sanpham1.png", "Rượu nho năm 1987", "330.000", "Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.")
+    +article-product("./images/sanpham2.png", "Rượu nho năm 1987", "330.000", "Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.")
+    +article-product("./images/sanpham2.png", "Rượu nho năm 1987", "330.000", "Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.")
+    +article-product("./images/sanpham2.png", "Rượu nho năm 1987", "330.000", "Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.")

@@ -1,0 +1,15 @@
+.sub-nav.container
+    .row
+        mixin subNav(title)
+            .sub-nav__child.col-md-3
+                h3.sub-nav__child-h3= title
+                ul.sub-nav__child-ul
+                    - var sublists = ['Rượu Chivas','Hàng độc - Rượu độc đáo', 'Johnnie Walker','Rượu Whisky','Rượu Remy Martin','Rượu Glenmorangie']
+                    each listItem in sublists
+                        li.sub-nav__child-ul__li
+                            a(href="#")= listItem
+        +subNav('Rượu ngoại')
+        +subNav('Rượu vang')
+        +subNav('Rượu ngoại')
+        .sub-nav__child.col-md-3
+            img.sub-nav__child-img(src="./images/menu-img.png", alt="menu-img")

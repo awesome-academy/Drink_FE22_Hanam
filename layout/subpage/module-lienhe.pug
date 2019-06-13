@@ -1,0 +1,62 @@
+.wrapper-middle
+    .module.container-fluid
+        .row
+            include panigation
+            +panigation1('Trang chủ', 'Liên hệ')
+            .container-fluid
+                .box-aside__sale-content__info
+                    h2.donhang.box-aside__sale-content__info-h2 Liên hệ
+                    hr.box-aside__sale-content__info-hr
+                .row
+                    .col-lg-9
+                        img.img-fluid(src="./images/map.png", alt="map")
+                        form.lienhe-form.form-blog__form
+                            .form-group.row
+                                label.form-blog__form-label.col-sm-2.col-form-label Your Name
+                                .col-sm-10
+                                    input.form-control(type="text", placeholder="")
+                            .form-group.row
+                                label.form-blog__form-label.col-sm-2.col-form-label Your Email
+                                .col-sm-10
+                                    input.form-control(type="email", placeholder="")
+                            .form-group.row
+                                label.form-blog__form-label.col-sm-2.col-form-label Subject
+                                .col-sm-10
+                                    input.form-control(type="text", placeholder="")
+                            .form-group.row
+                                label.form-blog__form-label.col-sm-2.col-form-label Your Messasge
+                                .col-sm-10
+                                    textarea.form-control(rows="10")
+                                    button.dangky-box_btn.dangnhap-box_form-group__btn.btn(type="submit") Gửi
+                    .col-lg-3
+                        a(href="#")
+                            img.img-fluid(src="./images/logo.png", alt="logo")
+                        h5.infomation-customer_h5 
+                            i.infomation-customer_i.fa.fa-map-marker
+                            span Toà nhà Hà Nội group
+                            br
+                            span 442 Đội Cấn, Ba Đình Hà Nội
+                        h5.infomation-customer_h5 
+                            i.infomation-customer_i.fa.fa-phone
+                            span (04) 3786 8904
+                        h5.infomation-customer_h5 
+                            i.infomation-customer_i.fa.fa-envelope-o
+                            span support@milano.com
+                        h3.dangky-box.dangnhap-box_h3 Follow us
+                        .box-aside__info-item__social
+                            ul.box-aside__info-item__social-ul
+                                li.box-aside__info-item__social-ul__li
+                                    a.box-aside__info-item__social-ul__li-a(href="#")
+                                        i.fa.fa-twitter
+                                li.box-aside__info-item__social-ul__li
+                                    a.box-aside__info-item__social-ul__li-a(href="#")
+                                        i.fa.fa-google-plus
+                                li.box-aside__info-item__social-ul__li
+                                    a.box-aside__info-item__social-ul__li-a(href="#")
+                                        i.fa.fa-dribbble
+                                li.box-aside__info-item__social-ul__li
+                                    a.box-aside__info-item__social-ul__li-a(href="#")
+                                        i.fa.fa-linkedin
+                                li.box-aside__info-item__social-ul__li
+                                    a.box-aside__info-item__social-ul__li-a(href="#")
+                                        i.fa.fa-stack-overflow               

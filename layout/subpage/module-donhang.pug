@@ -1,0 +1,65 @@
+.wrapper-middle
+    .module.container-fluid
+        .row
+            include panigation
+            +panigation1('Trang chủ', 'đơn hàng')
+            .container-fluid
+                .box-aside__sale-content__info
+                    h2.donhang.box-aside__sale-content__info-h2 Đơn hàng
+                    hr.box-aside__sale-content__info-hr
+                .row
+                    .col-md-9
+                        table.table.table-bordered.shopping-table
+                            thead.shopping-table__thead
+                                tr.donhang-tr
+                                    th(colspan="7")
+                                        h3.donhang.text-left.dangky-box.dangnhap-box_h3 Danh sách đơn hàng
+                                        p.donhang.text-left Trạng thái Tất cả (16) | Đã huỷ (10) Chưa duyệt (0) | Đã thanh toán - chờ mua hàng (0) | Đã mua hàng (0)
+                                        p.donhang.text-left Hàng đã chở về - chờ giao hàng (0) | Đã kết thúc (6)
+                                tr.shopping-table__thead-tr
+                                    - var titles = ['STT', 'Mã hóa đơn/Ngày mua hàng', 'Kho nhận hàng', 'Số SP', 'Tổng tiền', 'Tình trạng', 'Thao tác'];
+                                    each item in titles
+                                        th.donhang.shopping-table__thead-tr__th(scope="col")= item
+                            tbody.shopping-table__tbody
+                                mixin trShopping(stt, codeProduct, date, logistic, quantity, total, status)
+                                    tr.donhang-box.shopping-table__thead-tr
+                                        td 
+                                            h2.donhang-box_h2.shopping-table__h2= stt
+                                        td 
+                                            h2.donhang-box_h2.shopping-table__h2= codeProduct
+                                            br
+                                            span.donhang= date
+                                        td  
+                                            h2.donhang-box_h2.shopping-table__h2= logistic
+                                        td 
+                                            h2.donhang-box_h2.shopping-table__h2= quantity
+                                        td  
+                                            h3.donhang-box_h3.shopping-table__h3= total
+                                                sup đ
+                                        td
+                                            h4.donhang-box_h4= status
+                                        td
+                                            a.donhang-box_a(href="#") Chi tiết 
+                                +trShopping('01', 'LEANHGIANG89 - 17/06/2015', '01:36 14/03/2015', 'HÀ ĐÔNG','7','350.000', 'Đã thanh toán')  
+                                +trShopping('02', 'LEANHGIANG89 - 17/06/2015', '01:36 14/03/2015', 'HÀ ĐÔNG','7','350.000', 'Đã thanh toán')  
+                                +trShopping('03', 'LEANHGIANG89 - 17/06/2015', '01:36 14/03/2015', 'HÀ ĐÔNG','7','350.000', 'Đã thanh toán')  
+                                +trShopping('04', 'LEANHGIANG89 - 17/06/2015', '01:36 14/03/2015', 'HÀ ĐÔNG','7','350.000', 'Đã thanh toán')  
+                                +trShopping('05', 'LEANHGIANG89 - 17/06/2015', '01:36 14/03/2015', 'HÀ ĐÔNG','7','350.000', 'Đã thanh toán')  
+                                +trShopping('06', 'LEANHGIANG89 - 17/06/2015', '01:36 14/03/2015', 'HÀ ĐÔNG','7','350.000', 'Đã thanh toán')      
+                    .col-md-3.nopadding
+                        .infomation-customer
+                            h3.donhang.text-left.dangky-box.dangnhap-box_h3 Thông tin khách hàng
+                            h5.infomation-customer_h5 
+                                i.infomation-customer_i.fa.fa-user
+                                span GiangLe
+                                br
+                                span Leanhgiang89@gmail.com
+                            h5.infomation-customer_h5 
+                                i.infomation-customer_i.fa.fa-map-marker
+                                span Toà nhà Hà Nội group
+                                br
+                                span 442 Đội Cấn, Ba Đình Hà Nội
+                            h5.infomation-customer_h5 
+                                i.infomation-customer_i.fa.fa-phone
+                                span (04) 3786 8904
+                            a.infomation-customer_a(href="#") Chi tiết địa chỉ

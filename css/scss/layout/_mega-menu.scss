@@ -1,0 +1,65 @@
+nav{
+    box-sizing: border-box;
+    #menu{
+        .navbar-nav{
+            position: relative;
+            .navbar-nav-li{
+                .nav-link{
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    border-bottom: 3px solid $black;
+                }
+                .nav-link:hover{
+                    border-bottom-color: $yellow;
+                }
+            }
+            .navbar-nav-li.active .nav-link{
+                border-bottom-color: $yellow;
+            }
+            .navbar-nav-li:hover > .sub-nav{
+                display: block;
+            }
+            .sub-nav{
+                display: none;
+                position: absolute;
+                border: 1px solid $yellow;
+                background: $white-light;
+                top: 1;
+                left: 0;
+                padding-bottom: $font-24;
+                z-index: 999;
+                &__child{
+                    &-h3{
+                        color: $blackwhite;
+                        font-size: $font-14;
+                        text-transform: uppercase;
+                        margin-top: $font-34;
+                    }
+                    &-ul{
+                        &__li{
+                            margin-top: $font-18;
+                            
+                            a{
+                                text-transform: capitalize;
+                                color: $mega-color;
+                                font-size: $font-14;
+                                text-decoration: none;
+                            }
+                            a:hover{
+                                color: $yellow;
+                            }
+                        }
+                        &__li.active a{
+                            color: $yellow;
+                        }
+                    }
+                    &-img{
+                        width: 140%;
+                        margin-left: -60px;
+                        margin-top: $font-34;
+                    }
+                }
+            }
+        }
+    }
+}

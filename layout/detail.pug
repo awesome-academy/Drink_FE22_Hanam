@@ -1,0 +1,22 @@
+doctype html
+html(lang='vi')
+    include ./subpage/head-detail
+    +head('Chi tiết')
+    body
+        .wrapper
+            include ./subpage/normal-header
+            include ./subpage/nav
+            article
+                include ./subpage/module-product
+            article
+                include ./subpage/product
+                +article('Sản phẩm liên quan')
+            include ./subpage/brand
+            include ./subpage/info-contact       
+            include ./subpage/footer               
+        include ./subpage/js     
+
+            
+
+
+       

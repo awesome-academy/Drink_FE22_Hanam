@@ -1,0 +1,91 @@
+.picture-slide{
+    &__thumb{
+        border-top: 1px solid $border-show;
+        border-left: 1px solid $border-show;
+        border-bottom: 1px solid $border-show;
+    }
+    &__zoom{
+        border: 1px solid $border-show;
+    }
+}
+.show-info{
+    .p-1{
+        width:60px; height:40px;
+    }
+    .custom-select{
+        border-radius:0; 
+        width:100px; 
+        border:1px solid #bfb6bb
+    }
+}
+.box-aside__sale-content__ul-li{
+    margin-right: $font-10;
+    color: $mega-color;
+} 
+.box-aside__sale-content__info{
+    &-p{
+        font-size: $font-16;
+        line-height: $font-18;
+    }
+    &-h4{
+        color: $mega-color;
+        @include h2($font-16);
+        margin-top: $font-21;
+        margin-bottom: $font-14;
+    }
+    &-ul{
+        margin-top: $font-30;
+        &-li{
+            margin-right: $font-30;
+            a{
+                color: $mega-color;
+                text-decoration: none;
+                i{
+                    margin-right: $font-8;
+                }
+            }
+            a:hover>i{
+                color: $yellow;
+            }
+        }
+    }
+}
+.description-box{
+    margin-top: $font-68;
+    .description{
+        .nav{
+            &-item{
+                padding: $font-8;
+                &__link{
+                    @include h2($font-18);
+                    text-decoration: none;
+                    color: $mega-color;
+                }
+            }
+            &-item:hover,&-item.active{
+                background: $yellow;
+                color: $white-light;
+                &__link{
+                    color: $white-light;
+                }
+            }
+            &-item:hover > a,&-item.active > a{
+                color: $white-light;
+            }
+        }
+        .tab-content{
+            margin-top: $font-21;
+            color: $mega-color;
+            p{
+                text-indent: 1rem;
+                line-height: $font-18;
+            }
+        }
+    } 
+}
+.box-article__content-new-products-col__content-review{
+    display: none;
+}
+.box-article__content-new-products-col__content-h4:hover > .box-article__content-new-products-col__content-review{
+    display: block;
+}

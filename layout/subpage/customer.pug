@@ -1,0 +1,42 @@
+.article.box-article.new-customers.container-fluid
+    .wrapper-middle.row
+        .box-article__content.col-sm-8.nopadding
+            h2.box-article__content-title Tin tức & blog
+            hr.box-article__content-hr
+            .new-box.container-fluid
+                .row
+                    mixin new-box(srcImg,title,content)
+                        .new-box__item.col-sm-6
+                            img.img-fluid(src=srcImg, alt="title")
+                            h3.new-box__item-h3
+                                a.new-box__item-h3__a(href="#")= title
+                            p.new-box__item-note Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+                            p.new-box__item-p= content
+                            a.new-box__item-a(href="#") Read more
+
+                    +new-box('./images/imageRudu/new1.jpg','Vang Thăng Long Classic','Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...')
+                    +new-box('./images/imageRudu/new2.jpg','Vang Thăng Long Classic','Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...')
+
+        
+        .box-article__content.col-sm-4.nopadding
+            h2.box-article__content-title khách hàng
+            hr.box-article__content-hr
+            .customer-box
+                .customer-box__eclipse
+                    i.customer-box__eclipse-i.fa.fa-quote-right
+                p.customer-box__p Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. 
+                            | Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, 
+                            | sản phẩm được đóng chai dung tích 750ml...
+                a.customer-box__a(href="#") Read more
+                .customer-box__avatar
+                    img.mx-auto.d-block.customer-box__avatar-img(src="./images/imageRudu/timthumb (2).jpg", alt="")
+                h3.customer-box__h3 Giang Lt
+                p.customer-box__p Graphic Design
+                .customer-box__button
+                    ol.customer-box__button-ol
+                        li.customer-box__button-ol__li.active
+                            i.fa.fa-circle
+                        li.customer-box__button-ol__li
+                            i.fa.fa-circle
+                        li.customer-box__button-ol__li
+                            i.fa.fa-circle

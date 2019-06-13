@@ -1,0 +1,54 @@
+.nomal-header{
+    nav#menu-head{
+        font-family: $TimeNewRoman;
+        background:rgba(255, 255, 255, 0.116);
+        width: 100%;
+        .nav-head{
+            max-width: $middle-width;
+            width: 100%;
+            margin: 0 auto; 
+            padding: $font-8;
+            ul{
+                display: flex;
+                margin-top: $font-12;
+                li{
+                    margin-right: 25px;
+                    a{
+                        color: $grey;
+                        
+                        font-size: $font-12;
+                        padding: 0;
+                    }
+                }
+                li:hover, li.active{
+                    a{
+                        color: $yellow;
+                    }
+                }
+            }
+            form{
+                input{
+                    font-size: $font-12;
+                    background: none;
+                    border: none;
+                    border-left: 2px solid white;
+                    border-radius: unset;
+                }
+                ::placeholder {
+                    color: $grey;
+                }
+                input:hover,input:focus, input:visited{
+                    box-shadow: none;
+                }
+                button{
+                    i{
+                        color: $grey;
+                    }
+                }
+                button:focus{
+                    box-shadow: none;
+                }
+            }
+        }   
+    }
+}

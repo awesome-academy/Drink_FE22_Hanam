@@ -1,0 +1,19 @@
+doctype html
+html(lang='vi')  
+    include ./subpage/head
+    +head('Drink_FE22_Hanam')
+    body
+        .wrapper
+            include ./subpage/header
+            include ./subpage/nav
+            include ./subpage/main-article
+            include ./subpage/gallery
+            article
+                include ./subpage/product
+                +article('Sản phẩm bán chạy')
+                include ./subpage/customer
+            include ./subpage/brand
+            include ./subpage/info-contact                
+            include ./subpage/footer               
+        include ./subpage/js   
+   

@@ -1,0 +1,27 @@
+mixin article(title='Default Title')   
+    .article.box-article.new-product
+        .wrapper-middle
+            .box-article__content.container-fluild
+                h2.box-article__content-title= title
+                hr.box-article__content-hr
+            .box-article__content-new-products.row
+                mixin article-product(srcImg,title,price,salePrice)
+                    .box-article__content-new-products-col.col-md-3.col-sm-6
+                        .box-article__content-new-products-col__content
+                            img.box-article__content-new-products-col__content-products.img-fluid(src=srcImg, alt=title)
+                            h4.box-article__content-new-products-col__content-h4 
+                                a(href="#")= title
+                            p.box-article__content-new-products-col__content-p
+                                span.box-article__content-new-products-col__content-p__price= price
+                                    sup đ
+                                span.box-article__content-new-products-col__content-p__saleprice  - 
+                                    del= salePrice
+                                        sup đ
+                            button.box-article__content-new-products-col__content-button 
+                                a(href="#") Add to cart
+
+                +article-product('./images/product/7.jpg','rượu vang đà lạt','370.000','450.000') 
+                +article-product('./images/product/8.jpg','rượu vang đà lạt','370.000','450.000')
+                +article-product('./images/product/1.jpg','rượu vang đà lạt','370.000','450.000')
+                +article-product('./images/product/2.jpg','rượu vang đà lạt','370.000','450.000')   
+
